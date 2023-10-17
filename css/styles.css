@@ -1,34 +1,48 @@
 :root {
 
-    /**
-      |============================
-      | Colors
-      |============================
-    */
+/**
+  |============================
+  | Colors
+  |============================
+*/
 
-    --iris: #4D5AE5;
-    --ocean: #404BBF;
-    --navy-blue: #2E2F42;
-    --slate: #434455;
-    --light-slate: #8E8F99;
-    --cornflower: #E7E9FC;
-    --cloud: #F4F4FD;
-    --navy-blue-modal: rgba(46, 47, 66, 0.40);
-    --grey: rgba(46, 47, 66, 0.7);
-    --green: #31D0AA;
-    --white: #ffffff;
-    --dairy: #FCFCFC;
-    
-    /**
-      |============================
-      | Others
-      |============================
-    */
+  --iris: #4D5AE5;
+  --ocean: #404BBF;
+  --navy-blue: #2E2F42;
+  --slate: #434455;
+  --light-slate: #8E8F99;
+  --cornflower: #E7E9FC;
+  --cloud: #F4F4FD;
+  --navy-blue-modal: rgba(46, 47, 66, 0.40);
+  --grey: rgba(46, 47, 66, 0.7);
+  --green: #31D0AA;
+  --white: #ffffff;
+  --dairy: #FCFCFC;
 
-    --indent-x: 24px;
-    --indent-y:;
-    --list-items-sum: 3;
+/**
+  |============================
+  | GRID'S
+  |============================
+*/
 
+
+/*           Desktop grid            */
+  --indent-x: 24px;
+  --indent-y:;
+  --list-items-sum: 3;
+/*                                   */
+
+/*           Tablet grid            */
+  --indent-x: 24px;
+  --indent-y:;
+  --list-items-sum: 3;
+/*                                  */
+
+/**
+  |============================
+  | 
+  |============================
+*/
 }
 
 
