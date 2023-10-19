@@ -537,22 +537,27 @@ background-color: var(--ocean);
 
 .footer-section {
   background: var(--navy-blue);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-content-position {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--indent-mob);
+  /* align-items: baseline; */
 }
 
 .logo-text-cont {
-  margin-right: 120px;
+  width: 264px;
+  /* margin-right: 120px; */
 }
 
 .footer-logo-position {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .logo-footer {
@@ -561,13 +566,14 @@ background-color: var(--ocean);
 
 .footer-alt-text {  
   color: var(--CLOUD, #F4F4FD);
-  max-width: 264px;
+ width: 100%;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: start;
 } 
 
 .social-media-cont {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .soc-media-title {
@@ -580,6 +586,7 @@ background-color: var(--ocean);
 }
 .soc-footer-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 .soc-footer-item {
@@ -624,6 +631,8 @@ background-color: var(--ocean);
 
 .ftr-subscribe-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -641,7 +650,7 @@ background-color: var(--ocean);
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   outline: transparent;
 }
@@ -941,6 +950,11 @@ background-color: var(--ocean);
   padding-right: 28px;
 }
 
+.logo-text-cont {
+  width: 288px;
+  /* margin-right: 120px; */
+}
+
 }
 /* ---------- 768 ---------- */
 
@@ -951,6 +965,10 @@ background-color: var(--ocean);
 }
 .grid-set {
   row-gap: var(--indent-mob);
+}
+
+.footer-content-position {
+  padding-left: 108px;
 }
 }
 
@@ -1017,9 +1035,29 @@ background-color: var(--ocean);
 
 /* ---------- Footer ---------- */
 
+.footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-content-position {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: start;
+  row-gap: var(--indent-mob);
+  column-gap: var(--indent-x);
+  
 }
 
 
+.ftr-subscribe-form {
+  flex-direction: row;
+}
+
+.ftr-subscribe-input {
+  width: 264px;
+}
 
 /* -------------------------------------------- */
 
@@ -1098,6 +1136,16 @@ section {
 
 /* ---------- Footer ---------- */
 
+
+.logo-text-cont {
+  margin-right: 120px;
+}
+
+
+
+.social-media-cont {
+  margin-right: 80px;
+}
 }
 
 
