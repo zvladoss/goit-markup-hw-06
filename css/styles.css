@@ -91,6 +91,7 @@ ul, ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 a {
@@ -99,6 +100,7 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
 img {
@@ -146,15 +148,17 @@ img {
   |============================
 */
 
-.nav-list,
+/* .nav-list,
 .features-list,
 .portfolio-list,
 .team-list,
 .adress-list,
 .team-soc-list,
-.soc-footer-list {
+.soc-footer-list,
+.mob-menu-list,
+.mob-adress-list {
   list-style-type: none;
-}
+} */
 
 /**
   |============================
@@ -170,11 +174,13 @@ img {
 
 .header-section .container {
   display: flex;
+  height: 56px;
+  
 }
 
 .header-padding {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .navigation {
@@ -183,7 +189,7 @@ img {
 }
 
 .navigation .logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .logo {
@@ -201,7 +207,7 @@ img {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   gap: 40px;
   margin-left: 76px;
 }
@@ -235,7 +241,7 @@ img {
 }
 
 .adress-header {
-  display: flex;
+  display: none;
   margin-left: auto;
   font-style: normal;
 }
@@ -259,6 +265,134 @@ img {
 .nav-list-link:focus {
   color: var(--OCEAN, #404BBF);
 }
+
+/*           Mob menu           */
+
+.mob-menu-open {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+.menu-open-icon {
+color: #2F2F37;
+}
+.mob-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  background-color: var(--white);
+}
+.mob-menu-close {
+  margin-left: auto;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 50%;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-close:hover,
+.mob-menu-close:focus {
+  background-color: var(--ocean);
+  fill: var(--white);
+  border: none;
+}
+
+.mob-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.mob-menu-item {
+}
+.mob-menu-link {
+color: var(--navy-blue);
+font-family: inherit;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02px;
+text-transform: capitalize;
+}
+.selected {
+}
+.mob-soc-container {
+  margin-top: auto;
+}
+.mob-adress {
+  margin-bottom: 48px;
+}
+.mob-adress-list {
+  space-between
+
+}
+.mob-adress-item {
+  margin-bottom: 24px;
+}
+.mob-adress-link {
+  color: var(--SLATE, #434455);
+font-family: inherit;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02px;
+}
+.mob-soc-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.mob-soc-item {
+}
+.mob-soc-link {
+  display: flex;
+  width: 40px;
+  height:  40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-adress-link:hover,
+.mob-adress-link:focus {
+color: var(--ocean);
+}
+
+.mob-soc-link:hover,
+.mob-soc-link:focus {
+  background-color: var(--ocean);
+}
+
+.mob-soc-icon {
+  fill: var(--cloud);
+}
+/*                              */
 
 /**
   |============================
@@ -991,6 +1125,25 @@ background-color: var(--ocean);
   flex-basis: calc((var(--margin-indent)*(var(--tab-list-items-sum) - 1)))/ var(--tab-list-items-sum);
 }
 /* ---------- Header ---------- */
+
+.header-section .container {
+  height: 72px;
+}
+
+.mob-menu-open {
+  display: none;
+  
+}
+.nav-list {
+  display: flex;
+}
+.adress-header {
+  display: block;
+}
+.adress-list {
+  flex-direction: column;
+  gap: 12px;
+}
 /* ---------- Hero ---------- */
 
 .hero-section {
