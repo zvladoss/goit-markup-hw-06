@@ -254,7 +254,7 @@ img {
 
 .adress-list-link {
   color: var(--SLATE, #434455);
-  line-height: 24px; /* 150% */
+  line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -357,7 +357,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.2; /* 120% */
-letter-spacing: 0.02px;
+letter-spacing: 0.02em;
 }
 .mob-soc-list {
   display: flex;
@@ -401,17 +401,26 @@ color: var(--ocean);
 */
 
 .hero-section {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 72px;
   padding-bottom: 72px;
-  max-width: 1440px;
+  max-width: 1444px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob2x.jpg);
+  }
+}
+
 
 .hero-title {
   margin-left: auto;
@@ -864,10 +873,10 @@ background-color: var(--ocean);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
-  /* padding: 24px; */
-  padding: 72px 24px 24px 24px;
+  width: 288px;
+  
+  /* padding: 72px 24px 24px 24px; */
+  padding: 24px 16px;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -879,7 +888,7 @@ background-color: var(--ocean);
   justify-content: center;
   margin-bottom: 24px;
   margin-left: auto;
-  position: absolute;
+  position: static;
   width: 24px;
   height: 24px;
   top: 24px;
@@ -916,11 +925,11 @@ background-color: var(--ocean);
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  margin-bottom: 8px;
 }
 
 .forms-container {
   width: 100%;
-  margin-bottom: 8px;
 }
 
 .d-modal-label {
@@ -976,7 +985,7 @@ background-color: var(--ocean);
   letter-spacing: 0.04em;
   color: var(--navy-blue-modal);
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--navy-blue-modal);
@@ -984,7 +993,7 @@ background-color: var(--ocean);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
   resize: none;
-  margin-bottom: 16px;
+  
 }
 
 .d-modal-textarea:focus {
@@ -1000,6 +1009,8 @@ background-color: var(--ocean);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
 }
 
 .d-checkbox-style {
@@ -1023,6 +1034,10 @@ background-color: var(--ocean);
 
 .checkbox-style-icon {
 
+}
+
+.checkbox-text-pos {
+  width: 231px;
 }
 
 .d-checkbox-link {
@@ -1089,6 +1104,7 @@ background-color: var(--ocean);
   /* margin-right: 120px; */
 }
 
+
 }
 /* ---------- 768 ---------- */
 
@@ -1128,8 +1144,13 @@ background-color: var(--ocean);
 
 .header-section .container {
   height: 72px;
+  align-items: center;
 }
 
+.header-padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .mob-menu-open {
   display: none;
   
@@ -1144,11 +1165,29 @@ background-color: var(--ocean);
   flex-direction: column;
   gap: 12px;
 }
+
+.adress-list-link {
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.03em;
+}
+.adress-list-item > .header-padding {
+  padding: 0;
+}
 /* ---------- Hero ---------- */
 
 .hero-section {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tab.jpg);
   padding-top: 112px;
   padding-bottom: 112px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tab2x.jpg);
+  }
 }
 
 .hero-title {
@@ -1212,6 +1251,22 @@ background-color: var(--ocean);
   width: 264px;
 }
 
+/* ---------- Modal ---------- */
+
+.desktop-modal {
+  width: 408px;
+  min-height: 584px;
+  padding: 24px;
+}
+
+.checkbox-text-pos {
+  width: 338px;px;
+}
+
+.d-checkbox-label {
+  align-items: baseline;
+}
+  
 /* -------------------------------------------- */
 
 
@@ -1243,11 +1298,35 @@ section {
 }
 
 /* ---------- Header ---------- */
+
+.adress-list {
+  flex-direction: row;
+  gap: 40px;
+}
+
+.nav-list-link {
+  font-style: 16px;
+  line-height: 1.5;
+}
+
+.adress-list-item > .header-padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 /* ---------- Hero ---------- */
 
 .hero-section {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -1294,7 +1373,10 @@ section {
   margin-right: 120px;
 }
 
-
+.footer-content-position {
+  flex-wrap: nowrap;
+  gap: 0;
+}
 
 .social-media-cont {
   margin-right: 80px;
