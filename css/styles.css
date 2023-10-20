@@ -106,7 +106,6 @@ button {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden {
@@ -278,7 +277,7 @@ img {
 color: #2F2F37;
 }
 .mob-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
@@ -292,6 +291,9 @@ color: #2F2F37;
   padding-bottom: 40px;
   padding-left: 16px;
   background-color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .mob-menu-close {
   margin-left: auto;
@@ -362,7 +364,7 @@ letter-spacing: 0.02em;
 .mob-soc-list {
   display: flex;
   gap: 40px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .mob-soc-item {
@@ -413,7 +415,8 @@ color: var(--ocean);
   margin-right: auto;
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and 
+(min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-section {
@@ -587,7 +590,7 @@ color: var(--ocean);
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-background-color: var(--ocean);
+  background-color: var(--ocean);
 }
 
 .team-soc-icon {
@@ -709,7 +712,7 @@ background-color: var(--ocean);
 
 .footer-alt-text {  
   color: var(--CLOUD, #F4F4FD);
- width: 100%;
+  width: 100%;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: start;
@@ -861,7 +864,7 @@ background-color: var(--ocean);
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.backdrop-modal.is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1023,7 +1026,7 @@ background-color: var(--ocean);
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
   fill: transparent;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .d-checkbox-input:checked + .d-checkbox-label > .d-checkbox-style {
@@ -1086,46 +1089,46 @@ background-color: var(--ocean);
 /* ---------- 320 ---------- */
 
 @media screen and (min-width: 320px) {
+
   .container {
-    width: 320px;
+    min-width: 320px;
   } 
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
+  .team-section .container {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 
-.team-section .container {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-.logo-text-cont {
-  width: 288px;
-  /* margin-right: 120px; */
-}
+  .logo-text-cont {
+    width: 288px;
+    /* margin-right: 120px; */
+  }
 
 
 }
 /* ---------- 768 ---------- */
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
-.team-section .container {
-  padding-left: 108px;
-  padding-right: 108px;
-}
-.grid-set {
-  row-gap: var(--indent-mob);
-}
+  .team-section .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .grid-set {
+    row-gap: var(--indent-mob);
+  }
 
-.footer-content-position {
-  padding-left: 108px;
-}
+  .footer-content-position {
+    padding-left: 108px;
+  }
 }
 
 @media screen and (min-width: 768px) {
 
 .container {
-  width: 768px;
+  min-width: 768px;
 }
 
 .grid-set {
@@ -1152,8 +1155,10 @@ background-color: var(--ocean);
   padding-bottom: 24px;
 }
 .mob-menu-open {
+  display: none;  
+}
+.mob-menu {
   display: none;
-  
 }
 .nav-list {
   display: flex;
@@ -1167,9 +1172,9 @@ background-color: var(--ocean);
 }
 
 .adress-list-link {
-font-size: 12px;
-font-weight: 400;
-letter-spacing: 0.03em;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 .adress-list-item > .header-padding {
   padding: 0;
@@ -1182,7 +1187,7 @@ letter-spacing: 0.03em;
   padding-bottom: 112px;
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-section {
@@ -1208,9 +1213,9 @@ letter-spacing: 0.03em;
 }
 
 
-  .features-title {
-    text-align: start;
-  }
+.features-title {
+  text-align: start;
+}
 
 /* ---------- Team ---------- */
 
@@ -1239,8 +1244,7 @@ letter-spacing: 0.03em;
   text-align: start;
   row-gap: var(--indent-mob);
   column-gap: var(--indent-x);
-  
-}
+  }
 
 
 .ftr-subscribe-form {
@@ -1321,7 +1325,7 @@ section {
   padding-bottom: 188px;
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-section {
