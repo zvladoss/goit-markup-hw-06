@@ -71,9 +71,9 @@
       </div>
       <!--  MOB-MENU -->
 
-      <div class="backdrop-mob-menu is-open">
+      <div class="backdrop-mob-menu .menu-container">
         <div class="mob-nav-container">
-          <button class="mob-close-btn" type="button">
+          <button class="mob-close-btn" type="button .js-menu-btn">
             <svg class="mob-close-btn-icon" width="8" height="8">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -117,25 +117,25 @@
           </address>
           <ul class="mob-soc-list">
             <li class="mob-soc-item">
-              <a href="" class="mob-soc-link"
+              <a href="" class="mob-soc-link" rel="noopener noreferrer"
                 ><svg class="mob-soc-icon" width="16" height="16">
                   <use href="./images/icons.svg#instagram"></use></svg
               ></a>
             </li>
             <li class="mob-soc-item">
-              <a href="" class="mob-soc-link"
+              <a href="" class="mob-soc-link" rel="noopener noreferrer"
                 ><svg class="mob-soc-icon" width="16" height="16">
                   <use href="./images/icons.svg#twitter"></use></svg
               ></a>
             </li>
             <li class="mob-soc-item">
-              <a href="" class="mob-soc-link"
+              <a href="" class="mob-soc-link" rel="noopener noreferrer"
                 ><svg class="mob-soc-icon" width="16" height="16">
                   <use href="./images/icons.svg#facebook"></use></svg
               ></a>
             </li>
             <li class="mob-soc-item">
-              <a href="" class="mob-soc-link"
+              <a href="" class="mob-soc-link" rel="noopener noreferrer"
                 ><svg class="mob-soc-icon" width="16" height="16">
                   <use href="./images/icons.svg#linkedin"></use></svg
               ></a>
@@ -225,35 +225,40 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team-mem-1.jpg    1x,
+                  ./images/team-mem-1-2x.jpg 2x
+                "
                 class="team-mem-img"
                 src="./images/team-mem-1.jpg"
                 alt="team-member-1"
                 width="264"
+                height="260"
               />
               <div class="member-info-container">
                 <h3 class="team-member-name">Mark Guerrero</h3>
                 <p class="team-mem-prof">Product Designer</p>
                 <ul class="team-soc-list">
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use></svg
                     ></a>
@@ -263,35 +268,40 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team-mem-2.jpg    1x,
+                  ./images/team-mem-2-2x.jpg 2x
+                "
                 class="team-mem-img"
                 src="./images/team-mem-2.jpg"
                 alt="team-member-2"
                 width="264"
+                height="260"
               />
               <div class="member-info-container">
                 <h3 class="team-member-name">Tom Ford</h3>
                 <p class="team-mem-prof">Frontend Developer</p>
                 <ul class="team-soc-list">
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use></svg
                     ></a>
@@ -301,35 +311,40 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team-mem-3.jpg    1x,
+                  ./images/team-mem-3-2x.jpg 2x
+                "
                 class="team-mem-img"
                 src="./images/team-mem-3.jpg"
                 alt="team-member-3"
                 width="264"
+                height="260"
               />
               <div class="member-info-container">
                 <h3 class="team-member-name">Camila Garcia</h3>
                 <p class="team-mem-prof">Marketing</p>
                 <ul class="team-soc-list">
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use></svg
                     ></a>
@@ -339,35 +354,40 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/team-mem-4.jpg    1x,
+                  ./images/team-mem-4-2x.jpg 2x
+                "
                 class="team-mem-img"
                 src="./images/team-mem-4.jpg"
                 alt="team-member-4"
                 width="264"
+                height="260"
               />
               <div class="member-info-container">
                 <h3 class="team-member-name">Daniel Wilson</h3>
                 <p class="team-mem-prof">UI Designer</p>
                 <ul class="team-soc-list">
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
                   <li class="team-soc-item">
-                    <a href="" class="team-soc-link"
+                    <a href="" class="team-soc-link" rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/icons.svg#linkedin"></use></svg
                     ></a>
@@ -387,12 +407,36 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-1.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-1.jpg    1x,
+                      ./images/job-img-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-1-tab.jpg    1x,
+                      ./images/job-img-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-1-mob.jpg    1x,
+                      ./images/job-img-1-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-1.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -406,12 +450,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-2.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-2.jpg    1x,
+                      ./images/job-img-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-2-tab.jpg    1x,
+                      ./images/job-img-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-2-mob.jpg    1x,
+                      ./images/job-img-2-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-2.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -425,12 +493,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-3.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-3.jpg    1x,
+                      ./images/job-img-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-3-tab.jpg    1x,
+                      ./images/job-img-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-3-mob.jpg    1x,
+                      ./images/job-img-3-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-3.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -444,12 +536,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-4.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-4.jpg    1x,
+                      ./images/job-img-4-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-4-tab.jpg    1x,
+                      ./images/job-img-4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-4-mob.jpg    1x,
+                      ./images/job-img-4-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-4.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -463,12 +579,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-5.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-5.jpg    1x,
+                      ./images/job-img-5-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-5-tab.jpg    1x,
+                      ./images/job-img-5-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-5-mob.jpg    1x,
+                      ./images/job-img-5-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-5.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -482,12 +622,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay">
-                <img
-                  class="portfolio-list-img"
-                  src="./images/job-img-6.jpg"
-                  alt="portfolio-image"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/job-img-6.jpg    1x,
+                      ./images/job-img-6-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-6-tab.jpg    1x,
+                      ./images/job-img-6-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/job-img-6-mob.jpg    1x,
+                      ./images/job-img-6-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-list-img"
+                    src="./images/job-img-6.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -521,28 +685,28 @@
           <p class="soc-foot-text">Social media</p>
           <ul class="soc-foot-list">
             <li class="soc-foot-item">
-              <a href="" class="soc-foot-link">
+              <a href="" class="soc-foot-link" rel="noopener noreferrer">
                 <svg class="soc-foot-icon" width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-foot-item">
-              <a href="" class="soc-foot-link">
+              <a href="" class="soc-foot-link" rel="noopener noreferrer">
                 <svg class="soc-foot-icon" width="24" height="24">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-foot-item">
-              <a href="" class="soc-foot-link">
+              <a href="" class="soc-foot-link" rel="noopener noreferrer">
                 <svg class="soc-foot-icon" width="24" height="24">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-foot-item">
-              <a href="" class="soc-foot-link">
+              <a href="" class="soc-foot-link" rel="noopener noreferrer">
                 <svg class="soc-foot-icon" width="24" height="24">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -577,14 +741,16 @@
 
     <div class="backdrop-modal">
       <div class="desktop-modal">
-        <button class="close-btn" type="button">
-          <svg class="close-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-        <p class="modal-uppertitle">
-          Leave your contacts and we will call you back
-        </p>
+        <div class="modal-close-btn-cont">
+          <button class="close-btn" type="button">
+            <svg class="close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <p class="modal-uppertitle">
+            Leave your contacts and we will call you back
+          </p>
+        </div>
         <form class="d-modal-form">
           <div class="forms-container">
             <label class="d-modal-label" for="user-name">Name</label>
@@ -649,10 +815,13 @@
               ><span class="d-checkbox-style">
                 <svg class="checkbox-style-icon" width="10" height="8">
                   <use href="./images/icons.svg#click"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="d-checkbox-link" href="">Privacy Policy</a></label
-            >
+                </svg>
+              </span>
+              <span class="checkbox-text-pos">
+                I accept the terms and conditions of the
+                <a class="d-checkbox-link" href="">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button class="d-modal-btn" type="submit">Send</button>
           <!-- <input class="d-modal-input" type="text" placeholder="Text input" /> -->
